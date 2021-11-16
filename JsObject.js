@@ -8,13 +8,13 @@ let students = [
     {name: 'Boris', cohort: 'June'}
 ];
 
-function printStudentsInfo(students){
+function displayStudentInfo(students){
     for(student of students){
         console.log("Name:" + " " + student.name +","+ " "+ "Cohort:" + " " + student.cohort);
     }
 }
 
-printStudentsInfo(students);
+displayStudentInfo(students);
 
 /*-------------------------------------------------------------- 2 ------------------------------------------------------------*/
 
@@ -31,7 +31,7 @@ let users = {
     ]
 };
 
-function userInfo(users){
+function userEmployeesManagers(users){
     for (const key in users) {
         console.log(key.toUpperCase());
         for(let i =0; i< users[key].length; i++){
@@ -44,4 +44,4 @@ function userInfo(users){
     }
 }
 
-userInfo(users);
+userEmployeesManagers(users);
